@@ -12,7 +12,7 @@ var iscif = ((typeof module === 'object') ? module : {}).exports = function (cif
   // CIF should be 9 characters
   var unverifiednum = String(cif).replace(/[\-]/gi, '').toUpperCase(),
       letters = "ABCDEFGHJKLMNPRQSUVW", a, b, oddNumbers, x, c, d, e, i, len,
-      letters2 = "ABCDEFGHIJ", letter, provinceCode, number, controlCode;
+      letters2 = "JABCDEFGHI", letter, provinceCode, number, controlCode;
   
 
   if (!unverifiednum.match(/^[ABCDEFGHJKLMNPRQSUVW]\d{7}[\d[ABCDEFGHIJ]$/)) {
